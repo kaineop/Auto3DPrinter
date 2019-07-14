@@ -26,8 +26,8 @@ import sys
 
 
 sys.argv.extend(['--port', 5000])
-sys.argv.extend (['--host'], "192.168.2.58")
-sys.argv.extend(['--apikey'], "a")
+sys.argv.extend (['--host', "192.168.2.58"])
+sys.argv.extend(['--apikey', "a"])
 
 
 cmd = OctoprintAPI()
