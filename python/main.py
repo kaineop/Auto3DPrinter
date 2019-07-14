@@ -11,6 +11,8 @@ Codes to use (in first line of serial message):
 
 -- Key --
 
+E.g. message= 1select-file (Arduino will not recieve a response)
+ message = 2print-progress (Arduino will recieve a serial msg response with information)
 
 """
 
@@ -20,9 +22,16 @@ def log_msg(code, dev, msg):
 
 import serial
 import controller
+import sys
 
 
-cmd = OctoprintAPI(port=5000, address="192.168.2.58", api_key="a")
+sys.argv.extend(['--port', 5000])
+sys.argv.extend (['--host'], "192.168.2.58")
+sys.argv.extend(['--apikey'], "a")
+
+
+cmd = OctoprintAPI()
+
 p = "/dev/t1" # Port from Linux
 r = 9600 # Baud rate, u can try increase for a faster experience but wouldnt push it too much
 active = True
