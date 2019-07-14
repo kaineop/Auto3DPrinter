@@ -418,7 +418,7 @@ if __name__ == '__main__':
         # Bed options
         elif args.set_bed_temp:
             if args.set_bed_temp < 0:
-                print('Error, bed temperature can\'t be negative', file=sys.stderr)
+                print("Error, bed temperature can\t be negative")
             else:
                 run_and_handle(octo_api.set_bed_temp, args.set_bed_temp)
 
