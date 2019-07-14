@@ -307,7 +307,7 @@ def run_and_handle(method, *_args):
         if result is not None:
             print(result)
     except Exception as e:
-        print(str(e), file=sys.stderr)
+        print(str(e))
 
 if __name__ == '__main__':
     # First, check if we have any arguments
