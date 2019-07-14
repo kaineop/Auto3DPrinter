@@ -27,7 +27,7 @@ import sys
 
 sys.argv.extend(['--port', 5000])
 sys.argv.extend (['--host', "192.168.2.58"])
-sys.argv.extend(['--apikey', "a"])
+sys.argv.extend(['--apikey', "9C423FFB46084DC083A6EEAE677D0676"])
 
 
 from controller import OctoprintAPI as cmd
