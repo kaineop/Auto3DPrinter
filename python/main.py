@@ -30,7 +30,8 @@ sys.argv.extend (['--host', "192.168.2.58"])
 sys.argv.extend(['--apikey', "9C423FFB46084DC083A6EEAE677D0676"])
 
 
-from controller import OctoprintAPI as cmd
+from controller import OctoprintAPI
+cmd = OctoprintAPI()
 
 
 p = "/dev/ttyACM0" # Port from Linux
