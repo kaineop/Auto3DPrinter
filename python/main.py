@@ -33,7 +33,7 @@ sys.argv.extend(['--apikey', "a"])
 from controller import OctoprintAPI as cmd
 
 
-p = "/dev/t1" # Port from Linux
+p = "/dev/ttyACM0" # Port from Linux
 r = 9600 # Baud rate, u can try increase for a faster experience but wouldnt push it too much
 active = True
 print_status = ""
