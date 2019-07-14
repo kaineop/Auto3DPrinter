@@ -21,7 +21,7 @@ def log_msg(code, dev, msg):
     print ("[" + dev + "] [" + code + "] : " + msg)
 
 import serial
-import controller
+
 import sys
 
 
@@ -30,7 +30,8 @@ sys.argv.extend (['--host', "192.168.2.58"])
 sys.argv.extend(['--apikey', "a"])
 
 
-cmd = OctoprintAPI()
+from controller import OctoprintAPI as cmd
+
 
 p = "/dev/t1" # Port from Linux
 r = 9600 # Baud rate, u can try increase for a faster experience but wouldnt push it too much
